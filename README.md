@@ -226,7 +226,7 @@ Python aqui presente. Se não quiser utilizar, apenas ignore este arquivo e codi
 normalmente faria.
 
 Caso decida utilizar o MyPy, o tipo de retorno correto para todos os métodos declarados como rotas na controller é
-`Response | str`.
+`Response | str`. As configurações do MyPy estão no arquivo `mypy.ini`.
 
 ## 2. De repente, todos os dados que eu cadastrei sumiram!
 
@@ -241,7 +241,6 @@ veremos como usar um banco de dados de verdade para que nada seja perdido quando
 Editar as templates ou os arquivos estáticos é mais seguro, e funciona sem que o Flask tenha que ser reinicializado.
 
 # Como executar a aplicação?
-
 
 1. Se estiver usando o MyPy, execute `python -m mypy .\`
 
@@ -356,3 +355,5 @@ também este enunciado e nem nada da pasta `teste-basico`.
 Também não inclua as pastas `__pycache__` ou `.mypy_cache`, ou o arquivo `mypy.ini`.
 
 Lembre-se que ZIP não é RAR e que RAR não é ZIP.
+
+A entrega deverá ser feita por meio de um formulário (Google Forms) postado no classroom.
