@@ -149,10 +149,10 @@ Qualquer que tenha sido o sistema que você escolheu implementar, há ainda uma 
     precisar de regras de CSS específicas para serem usadas aqui, crie um CSS só para ser usado aqui ao invés de
     alterar o CSS utilizado pelas demais rotas.
 
-Observação: TODAS as funções a serem definidas no controller devem ser um tanto "burrinhas". **Nenhuma** delas deve ter
-lógica complexa (se tiver, você provavelmente está fazendo algo errado). No gabarito, a mais longa delas tem apenas
-oito linhas de código, contando com a linha do def e com a linha da definição da rota. Então lembre-se que a solução é
-algo simples, não é pra ficar batendo a cabeça com coisa complicada.
+Observação: **Todas** as funções a serem definidas no controller devem ser um tanto "burrinhas". **Nenhuma** delas deve
+ter lógica complexa (se tiver, você provavelmente está fazendo algo errado). No gabarito, a mais longa delas tem apenas
+oito linhas de código, contando com a linha do `def` e com a linha da definição da rota. Então lembre-se que a solução
+é algo simples, não é pra ficar batendo a cabeça com coisa complicada.
 
 **Todas** as funções a serem desenvolvidas no controller se resumem **no máximo** a essas quatro atividades **apenas e
 nada mais além do que isso**:
