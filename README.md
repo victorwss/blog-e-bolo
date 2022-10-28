@@ -149,10 +149,10 @@ Qualquer que tenha sido o sistema que você escolheu implementar, há ainda uma 
     precisar de regras de CSS específicas para serem usadas aqui, crie um CSS só para ser usado aqui ao invés de
     alterar o CSS utilizado pelas demais rotas.
 
-Observação: TODAS as funções a serem definidas no controller devem ser um tanto "burrinhas". **Nenhuma** delas deve ter
-lógica complexa (se tiver, você provavelmente está fazendo algo errado). No gabarito, a mais longa delas tem apenas
-oito linhas de código, contando com a linha do def e com a linha da definição da rota. Então lembre-se que a solução é
-algo simples, não é pra ficar batendo a cabeça com coisa complicada.
+Observação: **Todas** as funções a serem definidas no controller devem ser um tanto "burrinhas". **Nenhuma** delas deve
+ter lógica complexa (se tiver, você provavelmente está fazendo algo errado). No gabarito, a mais longa delas tem apenas
+oito linhas de código, contando com a linha do `def` e com a linha da definição da rota. Então lembre-se que a solução
+é algo simples, não é pra ficar batendo a cabeça com coisa complicada.
 
 **Todas** as funções a serem desenvolvidas no controller se resumem **no máximo** a essas quatro atividades **apenas e
 nada mais além do que isso**:
@@ -226,7 +226,7 @@ Python aqui presente. Se não quiser utilizar, apenas ignore este arquivo e codi
 normalmente faria.
 
 Caso decida utilizar o MyPy, o tipo de retorno correto para todos os métodos declarados como rotas na controller é
-`Response | str`.
+`Response | str`. As configurações do MyPy estão no arquivo `mypy.ini`.
 
 ## 2. De repente, todos os dados que eu cadastrei sumiram!
 
@@ -241,7 +241,6 @@ veremos como usar um banco de dados de verdade para que nada seja perdido quando
 Editar as templates ou os arquivos estáticos é mais seguro, e funciona sem que o Flask tenha que ser reinicializado.
 
 # Como executar a aplicação?
-
 
 1. Se estiver usando o MyPy, execute `python -m mypy .\`
 
@@ -351,8 +350,13 @@ Na pasta do sistema que você escolheu implementar (receitas ou blog), crie um a
 `templates`, a pasta `static`, a pasta `model` e o arquivo da controller.
 
 Não inclua a pasta `prototipos`. Também tome cuidado para não misturar arquivos de um sistema no outro. Não inclua
-também este enunciado e nem nada da pasta `teste-basico`.
+também este enunciado (`README.md`) e nem nada da pasta `teste-basico`.
 
-Também não inclua as pastas `__pycache__` ou `.mypy_cache`, ou o arquivo `mypy.ini`.
+Também não inclua as pastas `__pycache__`, `.mypy_cache` ou `.git` que são, respectivamente, criadas de forma
+automática pelo Python, pelo MyPy ou pelo Git dentro do seu projeto. Se elas aparecerem acidentalmente dentro do seu
+ZIP, remova-as de lá. Verifique também se elas aparecem dentro da pasta `model` ou em alguma outra subpasta.
 
-Lembre-se que ZIP não é RAR e que RAR não é ZIP.
+Quanto ao arquivo `mypy.ini`, se você não usa o MyPy, é melhor excluir. Se você usa, é melhor deixar. Mas para a
+finalidade de entrega e correção desta AC, tanto faz colocá-lo ou não dentro do ZIP.
+
+A entrega deverá ser feita por meio de um formulário (Google Forms) postado no classroom.
