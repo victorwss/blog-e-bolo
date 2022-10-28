@@ -350,10 +350,13 @@ Na pasta do sistema que você escolheu implementar (receitas ou blog), crie um a
 `templates`, a pasta `static`, a pasta `model` e o arquivo da controller.
 
 Não inclua a pasta `prototipos`. Também tome cuidado para não misturar arquivos de um sistema no outro. Não inclua
-também este enunciado e nem nada da pasta `teste-basico`.
+também este enunciado (`README.md`) e nem nada da pasta `teste-basico`.
 
-Também não inclua as pastas `__pycache__` ou `.mypy_cache`, ou o arquivo `mypy.ini`.
+Também não inclua as pastas `__pycache__`, `.mypy_cache` ou `.git` que são, respectivamente, criadas de forma
+automática pelo Python, pelo MyPy ou pelo Git dentro do seu projeto. Se elas aparecerem acidentalmente dentro do seu
+ZIP, remova-as de lá. Verifique se elas aparecem também dentro da pasta `model`.
 
-Lembre-se que ZIP não é RAR e que RAR não é ZIP.
+Quanto ao arquivo `mypy.ini`, se você não usa o MyPy, é melhor excluir. Se você usa, é melhor deixar. Mas para a
+finalidade de entrega e correção do AC, tanto faz deixá-lo ou não dentro do ZIP.
 
 A entrega deverá ser feita por meio de um formulário (Google Forms) postado no classroom.
