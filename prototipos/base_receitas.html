@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block titulo required %}{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Se colocar o nome do favicon e do CSS diretamente aqui não funcionar, lembre-se da função url_for do Jinja2. -->
+        <link rel="icon" type="image/png" href="bolo.png"/>
+        <link rel="stylesheet" href="receitas.css"/>
+
+        <script type="text/javascript">
+            {% block js %}{% endblock %}
+        </script>
+    </head>
+    <body>
+        {% block corpo required %}{% endblock %}
+    </body>
+</html>

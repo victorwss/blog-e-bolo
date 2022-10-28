@@ -1,0 +1,174 @@
+/* Box-sizing. */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Imagens. */
+
+img {
+    height: auto;
+    width: auto;
+}
+
+.resultados li img {
+    max-height: 120px;
+    max-width: 240px;
+    float: right;
+}
+
+.foto {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.foto img {
+    max-height: 400px;
+    max-width: 800px;
+}
+
+img.flutua {
+    max-height: 400px;
+    max-width: 400px;
+    float: right;
+}
+
+.resultados li::after, .texto::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Layout da página. */
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+html {
+    background-image: url("jornais.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.quadro {
+    text-align: left;
+    background: rgba(192, 192, 192, 75%);
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 1200px;
+}
+
+.texto {
+    background: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+  font-family: "XTypewriter";
+  src: url("XTypewriter-z8oP4.ttf") format("truetype");
+}
+
+h1, h2 {
+    font-family: "XTypewriter";
+    text-align: center;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1em;
+}
+
+h1 {
+    font-size: 50pt;
+}
+
+h2 {
+    font-size: 40pt;
+}
+
+/* Caixinhas. */
+
+.mensagem-erro, .ok, input, textarea, a, button, label, .quadro, .resultados li, .texto {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-family: "sans-serif";
+    font-size: 12pt;
+}
+
+label {
+    display: inline-block;
+    background: lime;
+    color: black;
+}
+
+.mensagem-erro, .ok {
+    display: block;
+    width: 100%;
+}
+
+.mensagem-erro {
+    background: red;
+    color: white;
+}
+
+.ok {
+    background: lime;
+    color: black;
+}
+
+.mensagem-erro.ok {
+    display: none;
+}
+
+input, textarea {
+    background: white;
+    display: block;
+    width: 100%;
+}
+
+textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 50px;
+    overflow-y: scroll;
+}
+
+#conteudo {
+    min-height: 200px;
+}
+
+a, button {
+    background: purple;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.resultados li {
+    background: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.autoria {
+    margin-top: 0;
+    font-style: italic;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!-- Herdar do base_blog.html. -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Blog de notícias</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="microfone.png"/>
+        <link rel="stylesheet" href="blog.css"/>
+        <script type="text/javascript">
+        </script>
+    </head>
+    <body>
+    <div class="quadro">
+        <h1>Blog de notícias</h1>
+        <div class="mensagem-erro">😬[ Texto da mensagem de erro. ]</div> <!-- Mostrar isso só se houver mensagem de erro. -->
+        <div class="ok">😉[ Texto da mensagem de sucesso. ]</div> <!-- Mostrar isso só se houver mensagem de sucesso. -->
+        <form action="[ URL desta mesma tela, mas o servidor interceptará a requisição e fará uma nova pesquisa. ]" method="GET">
+            <div>
+                <label for="q">Pesquisar:</label>
+                <span>* Um termo de pesquisa por linha</span>
+                <textarea name="q" id="q">[Termo de busca]
+Pode haver mais do que um termo de busca.</textarea>
+                <button type="submit">🔍Procurar</button>
+            </div>
+        </form>
+        <h2>Matérias</h2>
+        <ul class="resultados">
+            <li>👀Nenhuma matéria cadastrada ainda.</li> <!-- Só mostrar isso se o "banco de dados" estiver vazio. -->
+            <li>😕Nenhuma matéria foi encontrada para a sua busca.</li> <!-- Só mostrar isso se a busca não tiver encontrado nada. -->
+
+            <!-- Repete isto para todos os resultados trazidos na listagem. -->
+            <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Bairro_dos_jardins_em_s%C3%A3o_paulo.jpg" /> <!-- Exemplo de imagem. Colocar o link da imagem da matéria. -->
+                <div>
+                    <a href="[Ir para a tela de visualização desta matéria]">
+                        📰[Título da primeira matéria]
+                    </a>
+                </div>
+                <!-- Primeiro parágrafo do conteúdo da matéria. -->
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            </li>
+            <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/800px-President_Barack_Obama.jpg" /> <!-- Exemplo de imagem. Colocar o link da imagem da matéria. -->
+                <div>
+                    <a href="[Ir para a tela de visualização desta matéria]">
+                        📰[Título da segunda matéria]
+                    </a>
+                </div>
+                <!-- Primeiro parágrafo do conteúdo da matéria. -->
+                <div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</div>
+            </li>
+            <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Lady_Gaga_at_Joe_Biden%27s_inauguration_%28cropped_5%29.jpg/800px-Lady_Gaga_at_Joe_Biden%27s_inauguration_%28cropped_5%29.jpg" /> <!-- Exemplo de imagem. Colocar o link da imagem da matéria. -->
+                <div>
+                    <a href="[Ir para a tela de visualização desta matéria]">
+                        📰[Título da terceira matéria]
+                    </a>
+                </div>
+                <!-- Primeiro parágrafo do conteúdo da matéria. -->
+                <div>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</div>
+            </li>
+        </ul>
+        <a href="[Ir para a tela de criação de matéria nova]">⭐Cadastrar nova matéria</a>
+    </div>
+    </body>
+</html>
