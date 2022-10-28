@@ -354,9 +354,9 @@ também este enunciado (`README.md`) e nem nada da pasta `teste-basico`.
 
 Também não inclua as pastas `__pycache__`, `.mypy_cache` ou `.git` que são, respectivamente, criadas de forma
 automática pelo Python, pelo MyPy ou pelo Git dentro do seu projeto. Se elas aparecerem acidentalmente dentro do seu
-ZIP, remova-as de lá. Verifique se elas aparecem também dentro da pasta `model`.
+ZIP, remova-as de lá. Verifique também se elas aparecem dentro da pasta `model` ou em alguma outra subpasta.
 
 Quanto ao arquivo `mypy.ini`, se você não usa o MyPy, é melhor excluir. Se você usa, é melhor deixar. Mas para a
-finalidade de entrega e correção do AC, tanto faz deixá-lo ou não dentro do ZIP.
+finalidade de entrega e correção desta AC, tanto faz colocá-lo ou não dentro do ZIP.
 
 A entrega deverá ser feita por meio de um formulário (Google Forms) postado no classroom.
