@@ -7,6 +7,8 @@ O primeiro passo é escolher qual dos dois você vai preferir fazer e então jog
 de dificuldade, a mesma estrutura, os mesmos desafios de implementação e até são bastante parecidos. Um deles pode ser
 encontrado na pasta `receitas` e o outro na pasta `blog`.
 
+Grupos de até 5 alunos.
+
 ## Arquivos
 
 Alguns arquivos Python já estão disponibilizados:
